@@ -1,73 +1,78 @@
-# Welcome to your Lovable project
+# Data Insight Hub
 
-## Project info
+This project is a Data Insight Hub application designed to process CSV data, display insightful summaries, and export professional PDF reports. It features a modern web interface built with React/TypeScript and a robust backend powered by Django/Python.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Features
 
-## How can I edit this code?
+*   **CSV Data Upload:** Easily upload your CSV files for analysis.
+*   **Dynamic Data Summaries:** View key statistics and insights from your datasets, including calculated averages like "Avg. Cost".
+*   **Interactive History Panel:** Keep track of your uploaded datasets and their summaries.
+*   **PDF Export:** Generate professional PDF reports containing raw data for your datasets.
+*   **Responsive User Interface:** A user-friendly and adaptive interface for seamless interaction.
+*   **Robust Backend:** Built with Django, providing secure and efficient data processing.
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
+*   **Frontend:** React, TypeScript, Vite, Tailwind CSS
+*   **Backend:** Django, Django REST Framework, Python
+*   **Database:** SQLite (for development)
+*   **PDF Generation:** ReportLab
+*   **Data Processing:** Pandas, NumPy
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Setup Instructions
 
-Changes made via Lovable will be committed automatically to this repo.
+To get the project up and running, follow these steps:
 
-**Use your preferred IDE**
+### 1. Clone the repository
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+git clone https://github.com/Abhinavmehra2004/your-new-repo-name.git # Replace with your actual repo URL
+cd data-insight-hub
 ```
 
-**Edit a file directly in GitHub**
+### 2. Backend Setup
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Navigate to the `backend` directory, create and activate a virtual environment, and install dependencies:
 
-**Use GitHub Codespaces**
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+pip install -r requirements.txt # Assuming you have a requirements.txt, if not, install django, djangorestframework, djangorestframework-simplejwt, pandas, numpy, Pillow, reportlab, drf-spectacular, django-cors-headers, python-dateutil, jsonschema, referencing, rpds-py, sqlparse, inflection
+python manage.py migrate
+python manage.py runserver
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The backend API will be running at `http://localhost:8000`.
 
-## What technologies are used for this project?
+### 3. Frontend Setup
 
-This project is built with:
+In a new terminal, navigate to the project root and set up the frontend:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```bash
+npm install # or `yarn install` or `bun install`
+npm run dev # or `yarn dev` or `bun dev`
+```
 
-## How can I deploy this project?
+The frontend application will be available at `http://localhost:5173` (or another port as indicated by Vite).
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## Usage
 
-## Can I connect a custom domain to my Lovable project?
+1.  **Upload CSV:** Use the CSV Uploader component on the dashboard to upload your equipment data.
+2.  **View Summary:** Once uploaded, the dashboard will display a summary of your dataset, including calculated average cost.
+3.  **Export PDF:** Click the "Export PDF" button to generate a PDF report containing the raw data.
+4.  **History:** Review previously uploaded datasets and their summaries in the History Panel.
 
-Yes, you can!
+## Current Status
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+The application is fully functional, capable of:
+*   Loading dataset summaries.
+*   Displaying "Avg. Cost" in the dashboard.
+*   Exporting PDFs with raw data.
+*   The CSV Uploader and interactive history features are fully restored.
+*   Authentication has been temporarily relaxed for certain API views to ensure full functionality during development.
+*   All debugging `print()` statements have been removed from the backend.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Contributing
+
+Feel free to fork the repository, make changes, and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
