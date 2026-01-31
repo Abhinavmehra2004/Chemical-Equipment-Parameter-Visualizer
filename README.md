@@ -18,6 +18,7 @@ This project is a Chemical-Equipment-Parameter-Visualizer application designed t
 *   **Database:** SQLite (for development)
 *   **PDF Generation:** ReportLab
 *   **Data Processing:** Pandas, NumPy
+*   **Frontend Desktop:** Python, PyQt5, Pandas, NumPy
 
 ## Setup Instructions
 
