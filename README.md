@@ -58,6 +58,18 @@ npm run dev # or `yarn dev` or `bun dev`
 
 The frontend application will be available at `http://localhost:5173` (or another port as indicated by Vite).
 
+### 4. Desktop Frontend Setup
+
+Navigate to the `desktop` directory, create and activate a virtual environment, and install dependencies:
+
+```bash
+cd desktop
+python3 -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+pip install PyQt5 pandas numpy
+python3 main.py
+```
+
 ## Usage
 
 1.  **Upload CSV:** Use the CSV Uploader component on the dashboard to upload your equipment data.
