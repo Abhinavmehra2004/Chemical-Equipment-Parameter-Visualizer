@@ -14,11 +14,12 @@ This project is a Chemical-Equipment-Parameter-Visualizer application designed t
 ## Technologies Used
 
 *   **Frontend:** React, TypeScript, Vite, Tailwind CSS
+*   **Frontend Desktop:** Python, PyQt5, Pandas, NumPy
 *   **Backend:** Django, Django REST Framework, Python
 *   **Database:** SQLite (for development)
 *   **PDF Generation:** ReportLab
 *   **Data Processing:** Pandas, NumPy
-*   **Frontend Desktop:** Python, PyQt5, Pandas, NumPy
+
 
 ## Setup Instructions
 
