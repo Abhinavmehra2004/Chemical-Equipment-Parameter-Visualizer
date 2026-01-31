@@ -1,6 +1,6 @@
-# Data Insight Hub
+# Chemical-Equipment-Parameter-Visualizer
 
-This project is a Data Insight Hub application designed to process CSV data, display insightful summaries, and export professional PDF reports. It features a modern web interface built with React/TypeScript and a robust backend powered by Django/Python.
+This project is a Chemical-Equipment-Parameter-Visualizer application designed to process CSV data, display insightful summaries, and export professional PDF reports. It features a modern web interface built with React/TypeScript and a robust backend powered by Django/Python.
 
 ## Features
 
@@ -26,7 +26,7 @@ To get the project up and running, follow these steps:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Abhinavmehra2004/your-new-repo-name.git # Replace with your actual repo URL
+git clone https://github.com/Abhinavmehra2004/Chemical-Equipment-Parameter-Visualizer.git # Replace with your actual repo URL
 cd data-insight-hub
 ```
 
